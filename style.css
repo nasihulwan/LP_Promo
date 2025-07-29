@@ -37,12 +37,12 @@ body, html {
 
 .overlay-content {
   z-index: 2;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 20px;
+  /*background-color: transparent; */
+  padding: 0px;
   border-radius: 12px;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: none;
   margin-top: 50px; /* video turun sedikit lebih jauh */
 }
 
@@ -96,8 +96,10 @@ body, html {
 }
 .slide-image {
   width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   flex-shrink: 0;
-  border-radius: 12px;
+  border-radius: 12px0;
 }
 .slider-btn {
   position: absolute;
