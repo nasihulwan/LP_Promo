@@ -351,50 +351,49 @@ form button:hover {
 }
 
 /*slide gallery*/
-
-.gallery-section {
-  text-align: center;
+.kain-viral-section {
   padding: 40px 20px;
+  text-align: center;
 }
 
-.gallery-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #00000;
+.judul-kain {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
 }
 
-.gallery-grid {
+.kain-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.gallery-item {
+.kain-item {
   background-color: #fff;
   padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 10px;
 }
 
-.gallery-item img {
+.kain-item img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
-  border-radius: 4px;
-  max-height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
-/* Tambahan khusus untuk layar kecil */
+/* Opsional: tetap 2 kolom bahkan di HP */
 @media (max-width: 480px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  .kain-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .judul-kain {
+    font-size: 22px;
   }
 }
 
