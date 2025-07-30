@@ -352,22 +352,24 @@ form button:hover {
 
 /*slide gallery*/
 .kain-viral-section {
+  background-color: #F2C986;
   padding: 40px 20px;
   text-align: center;
 }
 
 .judul-kain {
   font-size: 32px;
-  font-weight: 700;
   color: #000;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
 .kain-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* tetap 2 kolom */
   gap: 16px;
-  max-width: 800px;
+  justify-items: center;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -375,27 +377,30 @@ form button:hover {
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .kain-item img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 6px;
-  object-fit: cover;
+  display: block;
 }
 
-/* Opsional: tetap 2 kolom bahkan di HP */
-@media (max-width: 480px) {
-  .kain-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-
-  .judul-kain {
-    font-size: 22px;
-  }
+.caption-box {
+  background-color: #F2C986;
+  color: #000;
+  font-weight: 600;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
 }
+
+/* ❌ Tidak pakai media query untuk ubah kolom */
+
 
 /*kenapa KR TEX */
 .why-krtex-section {
