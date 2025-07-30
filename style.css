@@ -82,6 +82,63 @@ body, html {
   margin-right: 8px;
 }
 
+/* Gambar Baris 3 */
+.slider-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #F2C986;
+}
+
+.main-display {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main-display img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.main-caption {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.thumbnail img {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.1);
+  border-color: #219150;
+}
+
+@media screen and (min-width: 1024px) {
+  #mainImage {
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+
 /* Slider */
 .slider-container {
   position: relative;
@@ -291,4 +348,156 @@ form button:hover {
   border-radius: 10px;
   margin-top: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*slide gallery*/
+
+.gallery-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #00000;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 4px;
+  max-height: 100%;
+}
+
+/* Tambahan khusus untuk layar kecil */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*kenapa KR TEX */
+.why-krtex-section {
+  background-color: #F2C986;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-krtex-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.section-title .highlight {
+  color: #000;
+}
+
+.reason-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reason-list li {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.reason-list .icon {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.sub-text {
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  margin-top: 6px;
+  color: #444;
+}
+
+.delivery-info h2 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.delivery-info .highlight {
+  color: #000;
+}
+
+.delivery-info p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .reason-list li {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .delivery-info h2 {
+    font-size: 20px;
+  }
+
+  .delivery-info p {
+    font-size: 15px;
+  }
 }

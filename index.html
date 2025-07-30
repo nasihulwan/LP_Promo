@@ -40,7 +40,59 @@
   </section>
 
   <section class="image-wrapper"><img src="Image/cara.webp" class="centered-image" alt="undian special dari kr tex kain viral"></section>
-  <section class="image-wrapper"><img src="Image/kain.webp" class="centered-image" alt="motif kain rayon di kr tex kain viral"></section>
+  
+  <section class="why-krtex-section">
+    <div class="container">
+      <h2 class="section-title">Kenapa Harus <span class="highlight">KR TEX</span>?</h2>
+        <ul class="reason-list">
+          <li><span class="icon">✔️</span>Langsung dari Pabrik</li>
+          <li><span class="icon">✔️</span>Harga Lebih Murah & Stabil karena kami produsen langsung</li>
+          <li><span class="icon">✔️</span>Motif Terupdate & Berkualitas Ekspor</li>
+          <li><span class="icon">✔️</span>Cocok untuk Reseller, Konveksi, Penjahit & Toko Kain</li>
+        </ul>
+
+
+      <div class="delivery-info">
+        <h2>🚚 Tidak Perlu Keluar Rumah,<br><span class="highlight">Kami Kirim ke Lokasimu</span></h2>
+        <p>Kami bukan reseller. Kami adalah produsen dan pemasok langsung.</p>
+        <p>Kalau kamu butuh bahan dengan harga terbaik,<br> <h2><strong>➡️ Kami solusinya.</strong></h2></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-wrapper"><img src="Image/contoh kain.png" class="centered-image" alt="motif kain rayon di kr tex kain viral"></section>
+
+    <div class="slider-wrapper">
+      <!-- Gambar besar -->
+      <div class="main-display" id="mainDisplay">
+        <img src="Image/ASTER PINK.png" alt="Gambar utama" id="mainImage" />
+        <div class="main-caption">Motif Aster Pink</div>
+      </div>
+
+    <!-- Thumbnail kecil -->
+    <div class="thumbnail-container">
+      <div class="thumbnail" onclick="changeImage('Image/ASTER PINK.png', 'Motif Aster Pink')">
+        <img src="Image/ASTER PINK.png" alt="Aster Pink" />
+      </div>
+      <div class="thumbnail" onclick="changeImage('Image/CINCAU HITAM.png', 'Motif Cincau Hitam')">
+        <img src="Image/CINCAU HITAM.png" alt="Cincau Hitam" />
+      </div>
+      <div class="thumbnail" onclick="changeImage('Image/CINTA HITAM(1).png', 'Motif Cinta Hitam')">
+        <img src="Image/CINTA HITAM(1).png" alt="Cinta Hitam" />
+      </div>
+      <div class="thumbnail" onclick="changeImage('Image/FIBER COKSU.png', 'Motif Fiber Coksu')">
+        <img src="Image/FIBER COKSU.png" alt="Fiber Coksu" />
+      </div>
+      <div class="thumbnail" onclick="changeImage('Image/FROZEN HITAM.PNG', 'Motif Frozen Hitam')">
+        <img src="Image/FROZEN HITAM.png" alt="Frozen Hitam" />
+      </div>
+      <div class="thumbnail" onclick="changeImage('Image/XAVIER ABU.png', 'Motif Xavier Abu')">
+        <img src="Image/XAVIER ABU.png" alt="Xavier Abu" />
+      </div>
+    </div>
+  </div>
+
+
   
   <!-- Katalog Link -->
   <section class="catalog-link">
@@ -108,6 +160,15 @@
     </div>
   </section>
 
+  <!-- Video -->
+  <section class="overlay-section berbisnis-bg" style="background-image: url('Image/pemicu.webp');">
+    <div class="overlay-content">
+    <video class="video-promosi" autoplay muted loop playsinline>
+      <source src="Image/video_gudang.mp4" type="video/mp4" />
+    </video>
+    </div>
+  </section>
+
   <section class="map-wrapper">
     <div class="map-box">
       <h2>Lokasi Gudang KR TEX</h2>
@@ -120,6 +181,23 @@
     </div>
   </section>
 
+  <section class="gallery-section">
+      <h1 class="gallery-title">GUDANG KR TEX KAIN VIRAL</h1>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="Image/gudang1.jpg" alt="GUDANG KR TEX KAIN VIRAL" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image/gudang2.jpg" alt="GUDANG KR TEX KAIN VIRAL" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image/gudang3.jpg" alt="GUDANG KR TEX KAIN VIRAL" />
+        </div>
+        <div class="gallery-item">
+          <img src="Image/gudang1.jpg" alt="GUDANG KR TEX KAIN VIRAL" />
+        </div>
+      </div>
+    </section>
 
   <section class="image-wrapper">
     <img src="Image/lokasi.webp" class="centered-image" alt="lokasi gudang KR TEX" />
@@ -159,8 +237,9 @@
     showSlide(0);
   </script>
 
-  
+  <script src="slide-produk.js"></script>
   <script src="countdown.js"></script>
+  <script src="slide-gallery.js"></script>
 
 </body>
 </html>
